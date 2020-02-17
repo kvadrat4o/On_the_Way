@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="~/img/favicon.png" type="image/png">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="~/css/bootstrap.css">
+        <link rel="stylesheet" href="~/vendors/linericon/style.css">
+        <link rel="stylesheet" href="~/css/font-awesome.min.css">
+        <link rel="stylesheet" href="~/css/magnific-popup.css">
+        <link rel="stylesheet" href="~/vendors/owl-carousel/owl.carousel.min.css">
+
+        <link rel="stylesheet" href="~/vendors/nice-select/css/nice-select.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="~/css/style.css">
+        <title>@ViewData["Title"] - OnTheWay</title>
+
+        <environment include="Development">
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/css/site.css" />
+        </environment>
+        <environment exclude="Development">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        </environment>
+    </head>
+    <body>
+        <!--================ Start Header Menu Area =================-->
+        <partial name="_Header" />
+        <!--================ End Header Menu Area =================-->
+        @RenderBody();
+        <!--================  Start footer Area =================-->
+        <partial name="_Footer" />
+        <!--================ End footer Area =================-->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="~/js/jquery-3.2.1.min.js"></script>
+        <script src="~/js/popper.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/stellar.js"></script>
+        <script src="~/js/jquery.magnific-popup.min.js"></script>
+        <script src="~/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="~/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="~/js/owl-carousel-thumb.min.js"></script>
+        <script src="~/js/jquery.ajaxchimp.min.js"></script>
+        <script src="~/js/mail-script.js"></script>
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="~/js/gmaps.min.js"></script>
+        <script src="~/js/theme.js"></script>
+    </body>
+</html>
